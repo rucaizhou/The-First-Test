@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>绘制不同的矩形和线条</title>
+</head>
+
+<body>
+    <canvas id="demoCanvas" width="500" height="500">
+        <p> 请使用谷歌浏览器查看本实例</p>
+    </canvas>
+    <script type="text/javascript">
+         var canvasDom = document.getElementById("demoCanvas");
+        var context = canvasDom.getContext('2d');
+        context.strokeStyle = "red";
+        context.strokeRect(10, 10, 190, 100)
+
+        var canvasDom = document.getElementById("demoCanvas");
+        var context = canvasDom.getContext('2d');
+        context.strokeStyle = "blue";
+        context.strokeRect(20, 20, 220, 220)
+
+        var canvasDom = document.getElementById("demoCanvas")
+        var context = canvasDom.getContext('2d')
+        context.moveTo(10, 10);
+        context.lineTo(120, 50);
+        //context.strokeStyle = "blue";
+        context.lineTo(350, 20);
+        context.strokeStyle = "red";
+        context.stroke();
+
+        var canvasDom=document.getElementById("demoCanvas")
+        var context=canvasDom.getContext('2d')
+         context.moveTo(110,110);
+         context.lineTo(110,250);
+         //context.strokeStyle="blue";
+         context.lineTo(130,120);
+         context.strokeStyle="blue";
+         context.stroke();
+    </script>
+</body>
+</html>>
